@@ -18,9 +18,10 @@ Remember to keep both token and password within the quotation marks.
 If you have peak and off-peak electricity tariffs, put the time of the start of each into the next two lines (hours only). The default settings are 0 and 7 relating to 'Economy 7' in the UK.
 
 >startCheapRate = 0  #Start of cheap rate electricty in hours (UTC)
+>
 >endCheapRate = 7  #Start of full rate electricity in hours (UTC)
 
-Note that because the clock on your meter is not reset during the summer to cope with daylight saving time, these have to be entered in UTC (GMT) **not** local time. 
+Note that because the clock on your electricity meter is not reset during the summer to cope with daylight saving time, these have to be entered in UTC (GMT) **not** local time. 
 
 The peak and off-peak usage is not available from the Cloud, instead it is counted by the script itself. In order for these to be accurate the script has to run continuously. If the script is stopped for any length of time, these values will no longer be correct.
 These figures will remain blank until some usage been measured.
