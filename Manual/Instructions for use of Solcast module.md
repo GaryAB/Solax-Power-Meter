@@ -28,7 +28,7 @@ In the main script, set the solcast line to ON
 
 Each evening at 9pm local time, the script will obtain the latest forecast from Solcast and calculate the recommended preload for the batteries for that night.
 
-![]{/Pictures/Preload.jpg}
+![](/Pictures/Preload.jpg)
 
 The script will continue to display the result until 1am allowing plenty of time to change the setting on the inverter. 
 
