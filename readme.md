@@ -7,7 +7,7 @@ Written to run on a Raspberry Pi with a four-inch Hyperpixel display, but can be
 Displays PV power, battery power, excess power to grid and the current battery state of charge.
 Also displays power used from the grid during peak (daytime) and off-peak (nighttime) periods.
 
-![]{/Pictures/Grid.jpg)
+![](Pictures/Grid.jpg)
 
 With the Solcast module activated it displays an estimated overnight precharge of the battery to make the best use of both PV power and battery power.
 
