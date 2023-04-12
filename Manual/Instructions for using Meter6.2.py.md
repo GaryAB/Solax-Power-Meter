@@ -1,15 +1,15 @@
-###Instructions for using Meter6.2.py
+Instructions for using Meter6.2.py
 
 To use Meter6.2 you will, first, need both the password and the token ID from the Solax Cloud.
 
 Assuming that your inverter has been linked to the Cloud by your installer, first log into the Solax Cloud website at [https://www.solaxcloud.com](https://www.solaxcloud.com).
 
-![](\Pictures\SolaxRegNo.jpg)
+![](/Pictures/SolaxRegNo.jpg)
 
 Go to the Inverter page and copy the Registration number which starts with the letter S. This is also your password, so paste it into the password line in the script. 
 >inverterPassword = 'SXXXXXXXXX'  #Password to access inverter - get from Solax Cloud website
 
-![](\Pictures\SolaxAPI.jpg)
+![](/Pictures/SolaxAPI.jpg)
 
 Next, go to the API page (under Service) where you can create and copy your Token ID. Paste this into the tokenID line in the script. 
 Remember to keep both token and password within the quotation marks.
