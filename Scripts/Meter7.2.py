@@ -443,7 +443,7 @@ while t < 2000000:
       nightGood = 0
     
   if dayGood == 1:
-    if not(int(nowTime.strftime("%H")) >= StartCheapRate and int(nowTime.strftime("%H")) < endCheapRate):
+    if not(int(nowTime.strftime("%H")) >= startCheapRate and int(nowTime.strftime("%H")) < endCheapRate):
         dayUsed =int((consumeenergy - dayStart)*100)/100
     else:
         dayUsed = localData["dayUsed"]
