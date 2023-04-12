@@ -35,4 +35,4 @@ The script will continue to display the result until 1am allowing plenty of time
 The calsulation also uses an estimate of your likely use of power during the next day. The estimate is based on previous use for that day of the week. 
 It will probably take a few weeks to generate a reasonably accurate estimate. The calculation is based on filling the battery by 3pm local time. 
 
-I take no responsibilty for ther accuracy or otherwise of Solcast's predictions.
+I take no responsibilty for the accuracy or otherwise of Solcast's predictions.
