@@ -14,6 +14,8 @@ startCheapRate = 0  #Start of cheap rate electricty in hours (UTC)
 endCheapRate = 7  #Start of full rate electricity in hours (UTC)
 solcast = "OFF"  #Set to 'ON' if using Solcast to forecast overnight preload (see notes)
 
+inverterAddress = 'http://' + inverterAddress
+
 from graphics import *
 win = GraphWin("Solar Power Meter",800,480)
 
@@ -219,7 +221,6 @@ while t < 2000000:
     'optType': 'ReadRealTimeData',
     'pwd': inverterPassword,
    }
-   inverterAddress = 'http://' + inverterAddress
    x = requests.post(inverterAddress, data=data)
    x = (x.text)
    cut = re.search("type",x)
