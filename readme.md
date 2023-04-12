@@ -16,5 +16,5 @@ With the Solcast module activated it displays an estimated overnight precharge o
 Two scripts are included, Meter6.2.py which takes its data from the Solax Cloud (and may work with other inverters) and Meter7.2.py which takes its data directly from the inverter.
 Meter7.2.py updates every thirty seconds, whereas the Solax Cloud is only updated once every five minutes.
 
-Full instructions in the *manual* folder
+Full instructions in the **manual** folder
  
