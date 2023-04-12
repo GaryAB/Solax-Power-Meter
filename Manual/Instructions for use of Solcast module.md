@@ -8,9 +8,13 @@ Once you have done that, you need to select your site which will take you to the
 
 In *Site Summary* you will see a Resouorce ID. Click on this and it will be copied to your clipboard. Paste into the script in the Resource ID line remembering to put it within the quotation marks.
 
+![](/Pictures/SolcastResource.jpg)
+
 >    resourceID = 'XXXX-XXXX-XXXX-XXXX' # obtain from Solcast website
 
 In the download section near the bottom of the page, select *Find your API key here*. Click *Copy Key* then paste it into the solcastKey line in the script.
+
+![](/Pictures/SolcastAPII.jpg)
 
 >solcastKey = 'ABCDEFGHIJKLMONPQRSTUVWXYZ123456' # obtain from Solcast website
 
@@ -23,6 +27,9 @@ In the main script, set the solcast line to ON
 >solcast = "ON"  #Set to 'ON' if using Solcast to forecast overnight preload (see notes)
 
 Each evening at 9pm local time, the script will obtain the latest forecast from Solcast and calculate the recommended preload for the batteries for that night.
+
+![]{/Pictures/Preload.jpg}
+
 The script will continue to display the result until 1am allowing plenty of time to change the setting on the inverter. 
 
 The calsulation also uses an estimate of your likely use of power during the next day. The estimate is based on previous use for that day of the week. 
