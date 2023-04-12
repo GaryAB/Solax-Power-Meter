@@ -1,6 +1,6 @@
 A Python script to display a user-friendly front end to a Solax X1 Hybrid G4 inverter.
 
-![](/Pictures/Display.jpg)
+![](/Pictures/PVonly.jpg)
 
 Written to run on a Raspberry Pi with a four-inch Hyperpixel display, but can be run on other implementations of Python. For full functionality, it needs to run continuously.
 
