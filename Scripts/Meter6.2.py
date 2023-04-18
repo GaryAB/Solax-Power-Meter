@@ -391,7 +391,7 @@ while t < 2000000:
      
   if nightGood == 1:
     if (int(nowTime.strftime("%H")) >= startCheapRate and int(nowTime.strftime("%H")) < endCheapRate):
-        nightUsed = int((consumeenergy - nightStart)*100)/100
+        nightUsed = int((y["consumeenergy"] - nightStart)*100)/100
     else:
         nightUsed = localData["nightUsed"]    
     if oldNightUsed != nightUsed:
@@ -407,8 +407,8 @@ while t < 2000000:
       nightGood = 0
     
   if dayGood == 1:
-    if not(int(nowTime.strftime("%H")) >= StartCheapRate and int(nowTime.strftime("%H")) < endCheapRate):
-        dayUsed =int((consumeenergy - dayStart)*100)/100
+    if not(int(nowTime.strftime("%H")) >= startCheapRate and int(nowTime.strftime("%H")) < endCheapRate):
+        dayUsed =int((["consumeenergy"] - dayStart)*100)/100
     else:
         dayUsed = localData["dayUsed"]
     if oldDayUsed != dayUsed:
