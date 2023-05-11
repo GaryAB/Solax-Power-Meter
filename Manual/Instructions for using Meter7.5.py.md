@@ -9,7 +9,7 @@ Meter7.5 can be used in two ways. You can either log into the inverter's WiFi ac
 The SSID of the inverter starts WiFI_S followed by nine digits.
 In this case you should leave the IP number in the script to the default 5.8.8.8
 
-To connect via yourhouse WiFi, you need to know whether your inverter has beens set with a static IP number or whether it is relying on the DCHP function of your router.
+To connect via your house WiFi, you need to know whether your inverter has beens set with a static IP number or whether it is relying on the DCHP function of your router.
 If you know that the IP address is static, then enter that address into the Inverter Address line in the script.
 If not, then enter **dchp** between the quotation marks. When you run the script it will search your WiFi to find the inverter. If your router should change the inverter's IP address, the script will search again.
 You also need to enter the DCHP range of your router on the two following lines. The default values will be correct for most domestic routers as supplied by your ISP. 
