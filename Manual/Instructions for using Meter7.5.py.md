@@ -15,10 +15,11 @@ If not, then enter **dchp** between the quotation marks. When you run the script
 You also need to enter the DCHP range of your router on the two following lines. The default values will be correct for most domestic routers as supplied by your ISP. 
 
 >inverterAddress = 'dchp'          #address of inverter - use '5.8.8.8' if logged into inverter's access point
->                                  #if the address is not static,  enter 'dchp'
->                                  #Set DCHP range of your router on the lines below
+>                                  
 >From = '192.168.1.1'              #Start of address range for DCHP allocation
+>
 >To = '192.168.1.254'              #End of address range for DCHP allocation
+>
 
 Note that if the DCHP range is large, the search process may take several minutes.
 
@@ -47,7 +48,9 @@ If you want to use this function change the word 'MANUAL' to 'AUTO'. Meter7.5 wi
 The Offset setting allows you to adjust the value set by the script. The default is zero, but I find that a value of 10 to 15 is effective as it allows for some use of cheap power before the sun rises as well as allowing some tolerance on the predicted solar yield for the next day. 
 
 >solcast = "ON"                    #Set to "ON" if using Solcast to forecast overnight preload (see notes)
+>
 >preloadSet = "AUTO"               #Set to "AUTO" to allow app to automatically set the overnight charging limit.
+>
 >offset = 0                        #percentage offset added to recommended preload
 
 Note that for this to work the inverteer must be in **Self Use** mode with **Charge from grid** enabled. This and the charge and discharge period need to be set from the SolaX app or SolaX Cloud as normal.
