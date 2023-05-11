@@ -32,6 +32,7 @@ Go to the Inverter page and copy the Registration number which starts with the l
 If you have peak and off-peak electricity tariffs, put the time of the start of each into the next two lines (hours only). The default settings are 0 and 7 relating to 'Economy 7' in the UK.
 
 >startCheapRate = 0                #Start of cheap rate electricty in hours (UTC)
+>
 >endCheapRate = 7                  #Start of full rate electricity in hours (UTC)
 
 Note that because the clock on your electricity meter is not automatically reset during the summer to cope with daylight saving time, these have to be entered in UTC (GMT) **not** local time. 
