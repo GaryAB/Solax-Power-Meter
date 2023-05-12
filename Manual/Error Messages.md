@@ -35,7 +35,7 @@ The following errors only apply to Meter7.5:
 Meter7.5 in DCHP mode has not been able to find the inverter on your local WiFi. This error may only be temporary. The script will wait for 5 minutes then try again.
 If the message becomes permanent, check that you are connected to the right WiFi network. Check that the router's DCHP range has been entered correctly.
 
-Note: I have noticed that the inverter goes off-line occasionally, perhaps when it is accessing the Cloud. In this case, this message may appear but it will reconnect at the next attempt.
+Note: I have noticed that the inverter goes off-line occasionally, perhaps when it is accessing the Cloud. In this case, this message may appear but it will usually reconnect at the next attempt.
 
 >Wrong type of inverter
 
