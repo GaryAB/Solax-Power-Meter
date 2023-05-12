@@ -8,11 +8,11 @@ import Solcast4
 import Week
 
 scale = 5                           #scale of meter in kW
-tokenID = '20220711024349042471535' #API Token from Solax cloud website
-inverterPassword = 'SXKRR7EZR2'     #Password to access inverter - get from Solax Cloud website
+tokenID = '12345678912345678912'    #API Token from Solax cloud website
+inverterPassword = 'SXXXXXXXXX'     #Password to access inverter - get from Solax Cloud website
 startCheapRate = 0                  #Start of cheap rate electricty in hours (UTC)
 endCheapRate = 7                    #Start of full rate electricity in hours (UTC)
-solcast = "ON"                      #Set to 'ON' if using Solcast to forecast overnight preload (see notes)
+solcast = "OFF"                     #Set to 'ON' if using Solcast to forecast overnight preload (see notes)
 
 def display(message,color):
   rect = Rectangle(Point(0,350), Point(800,400))
@@ -254,7 +254,6 @@ while t < 2000000:
   y = json.loads(z)
   # the result is a Python dictionary:
   total = (y['powerdc1'])+(y['powerdc2'])
-#  print (total)
   q = datetime.datetime.now()
   ntime = str(q.strftime("%X"))
 
