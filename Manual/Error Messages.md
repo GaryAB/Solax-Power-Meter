@@ -26,7 +26,7 @@ Remember that Meter7.5 cannot access the internet when connected directly to the
 
 >Data invalid from Solcast
 
-Solcast is not returning valid data. Check the Solcast Key and Resoource ID from the Solcast website. Set up Solcast on the website if you have not already done so.
+Solcast is not returning valid data. Check the Solcast Key and Resource ID from the Solcast website. Set up Solcast on the website if you have not already done so.
 
 The following errors only apply to Meter7.5:
 
