@@ -21,7 +21,7 @@ Check that your inverter password and in the case of Meter6.5, your API token, h
 
 >Unable to contact Solcast
 
-The script cannot access the Solcast website. Try the website in a browser to see if it is live: [https://toolkit.solcast.com.au/] {https://toolkit.solcast.com.au/)
+The script cannot access the Solcast website. Try the website in a browser to see if it is live: [toolkit.solcast.com.au/] {toolkit.solcast.com.au/)
 Remember that Meter7.5 cannot access the internet when connected directly to the SolaX inverter's access point.
 
 >Data invalid from Solcast
