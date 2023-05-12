@@ -9,12 +9,12 @@ Next you will need to know both the password and the token ID from the Solax Clo
 
 Assuming that your inverter has been linked to the Cloud by your installer, first log into the Solax Cloud website at [https://www.solaxcloud.com](https://www.solaxcloud.com).
 
-![](\Pictures\SolaxRegNo.jpg)
+![](/Pictures/SolaxRegNo.jpg)
 
 Go to the Inverter page and copy the Registration number which starts with the letter S. This is also your password, so paste it into the password line in the script. 
 >inverterPassword = 'SXXXXXXXXX'  #Password to access inverter - get from Solax Cloud website
 
-![](\Pictures\SolaxAPI.jpg)
+![](/Pictures/SolaxAPI.jpg)
 
 Next, go to the API page (under Service) where you can create and copy your Token ID. Paste this into the tokenID line in the script. 
 Remember to keep both token and password within the quotation marks.
@@ -24,6 +24,7 @@ Remember to keep both token and password within the quotation marks.
 If you have peak and off-peak electricity tariffs, put the time of the start of each into the next two lines (hours only). The default settings are 0 and 7 relating to 'Economy 7' in the UK.
 
 >startCheapRate = 0  #Start of cheap rate electricty in hours (UTC)
+>
 >endCheapRate = 7  #Start of full rate electricity in hours (UTC)
 
 Note that because the clock on your electricity meter is not automatically reset during the summer to cope with daylight saving time, these have to be entered in UTC (GMT) **not** local time. 
