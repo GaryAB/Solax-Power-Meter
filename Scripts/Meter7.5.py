@@ -51,8 +51,6 @@ while a <= scale*10:
 from graphics import *
 win = GraphWin("Solar Power Meter",800,480)
 
-#from colorama import init, Fore, Back, Style
-
 rect = Rectangle(Point(0,0), Point(800,480))
 rect.setFill('light gray')
 rect.draw(win)
