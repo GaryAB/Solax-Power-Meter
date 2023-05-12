@@ -48,7 +48,7 @@ For some reason Meter7.5 has been unable to automatically set the preload value.
 >Charge from grid disabled
 
 Meter7.5 cannot set the preload as **Charge from grid** is disabled at the inverter. 
-Use the SolaX Cloud or the SolaX app to enable **Charge from grid** in **Self use** mode on the inverter. Make sure that **Work mode** is set to **Self use**.  
+Use the SolaX Cloud or the SolaX app to enable **Charge from grid** in **Self use** in the inverter settings. Make sure that **Work mode** is set to **Self use**.  
  
 >Inverter fault
 
