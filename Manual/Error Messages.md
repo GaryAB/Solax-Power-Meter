@@ -9,7 +9,7 @@ Meter6.5.py has lost contact with the SolaX Cloud
 
 >Unable to contact inverter
 
-Meter7.5.py has lost copntact with the inverter
+Meter7.5.py has lost contact with the inverter
 
 Both these errors may only be temporary. The script will wait for 5 minutes then try again.
 If the message becomes permanent, check your WiFi and in the case of Meter6.5, your internet connection.
