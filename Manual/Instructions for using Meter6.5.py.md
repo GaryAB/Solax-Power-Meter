@@ -1,6 +1,6 @@
-###Instructions for using Meter6.4.py
+###Instructions for using Meter6.5.py
 
-To use Meter6.4 you will, first, need to set the scale for the meter display. The scale value needs to be set, in kW, to a value more than the maximum power you need to display.
+To use Meter6.5 you will, first, need to set the scale for the meter display. The scale value needs to be set, in kW, to a value more than the maximum power you need to display.
 For example, the default value is 5, ideal for a 4kWp solar array and a 3.68kW inverter. If your solar array is 7kW peak and your inverter is 5kW then set scale to 8.
 
 >scale = 5 #scale of meter in kW
