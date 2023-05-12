@@ -5,8 +5,8 @@ def getForecast(dayUsed):
     import datetime
     import time
 
-    solcastKey = '50dAf2cPkRTcghZM6tPmgUtyNfD9TxTW' # obtain from Solcast website
-    resourceID = 'dbc0-3099-b81c-3582' # obtain from Solcast website
+    solcastKey = 'ABCDEFGHIJKLMONPQRSTUVWXYZ123456' # obtain from Solcast website
+    resourceID = 'XXXX-XXXX-XXXX-XXXX' # obtain from Solcast website
     capacity = 11.6 # Capacity of battery in kWh
 
     date = datetime.datetime.utcnow()
