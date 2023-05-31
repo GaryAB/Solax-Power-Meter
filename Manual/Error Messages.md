@@ -17,7 +17,7 @@ If the message becomes permanent, check your WiFi and in the case of Meter6.6, y
 >Too many failures contacting cloud/inverter
 
 The cloud or inverter are not returning valid data. The script will try 5 times to get valid data and if it fails this message will appear.
-Check that your inverter password and in the case of Meter6.5, your API token, have been entered correctly.
+Check that your inverter password and in the case of Meter6.6, your API token, have been entered correctly.
 
 >Unable to contact Solcast
 
