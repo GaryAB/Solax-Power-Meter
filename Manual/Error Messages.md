@@ -12,7 +12,7 @@ Meter6.6.py has lost contact with the SolaX Cloud
 Meter7.6.py has lost contact with the inverter
 
 Both these errors may only be temporary. The script will wait for 5 minutes then try again.
-If the message becomes permanent, check your WiFi and in the case of Meter6.5, your internet connection.
+If the message becomes permanent, check your WiFi and in the case of Meter6.6, your internet connection.
 
 >Too many failures contacting cloud/inverter
 
