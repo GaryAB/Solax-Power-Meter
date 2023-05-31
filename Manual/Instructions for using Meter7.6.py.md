@@ -5,7 +5,7 @@ For example, the default value is 5, ideal for a 4kWp solar array and a 3.68kW i
 
 >scale = 5 #scale of meter in kW
 
-Meter7.5 can be used in two ways. You can either log into the inverter's WiFi access point directly or you can contact the inverter via your house WiFi.
+Meter7.6 can be used in two ways. You can either log into the inverter's WiFi access point directly or you can contact the inverter via your house WiFi.
 The SSID of the inverter starts WiFI_S followed by nine digits.
 In this case you should leave the IP number in the script to the default 5.8.8.8
 
