@@ -11,17 +11,18 @@ import scan
 import set
 
 scale = 5                         #scale of meter in kW
-inverterAddress = 'dchp'          #address of inverter - use '5.8.8.8' if logged into inverter's access point
+inverterAddress = '5.8.8.8'       #address of inverter - use '5.8.8.8' if logged into inverter's access point
                                   #if the address is not static,  enter 'dchp'
                                   #Set DCHP range of your router on the lines below
-From = '192.168.1.100'              #Start of address range for DCHP allocation
+From = '192.168.1.1'              #Start of address range for DCHP allocation
 To = '192.168.1.254'              #End of address range for DCHP allocation
-inverterPassword = 'SXKRR7EZR2'   #password to access inverter - found from SolaX Cloud website
+inverterPassword = 'SXXXXXXXXX'   #password to access inverter - found from SolaX Cloud website
 startCheapRate = 0                #Start of cheap rate electricty in hours (UTC)
 endCheapRate = 7                  #Start of full rate electricity in hours (UTC)
-solcast = "ON"                    #Set to "ON" if using Solcast to forecast overnight preload (see Manual)
-preloadSet = "AUTO"               #Set to "AUTO" to allow app to automatically set the overnight charging limit.
-offset = 10                       #percentage offset added to recommended preload
+solcast = "OFF"                   #Set to "ON" if using Solcast to forecast overnight preload (see Manual)
+preloadSet = "MANUAL"             #Set to "AUTO" to allow app to automatically set the overnight charging limit.
+offset = 0                        #percentage offset added to recommended preload
+
 
 def display(message,colour):
   rect = Rectangle(Point(0,350), Point(800,400))
