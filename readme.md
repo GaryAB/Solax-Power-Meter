@@ -6,6 +6,7 @@ Written to run on a Raspberry Pi with a four-inch Hyperpixel display, but can be
 
 Displays PV power, battery power, excess power to grid and the current battery state of charge.
 Also displays power used from the grid during peak (daytime) and off-peak (nighttime) periods.
+Meter.7.6.py adds a charging meter to show the power used to charge the batteries. 
 
 ![](/Pictures/Grid.jpg)
 
