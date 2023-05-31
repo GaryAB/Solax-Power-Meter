@@ -43,7 +43,7 @@ If you want to use the Solcast module, change the word 'OFF' to 'ON' and read th
    
 Note that Solcast will not work if you are logged directly into the inverter's access point as you will not have access to the internet.
 
-Meter7.5 also has the ability to set the charge limit on the inverter automatically.
+Meter7.6 also has the ability to set the charge limit on the inverter automatically.
 If you want to use this function change the word 'MANUAL' to 'AUTO'. Meter7.5 will then automatically set the preload value and tell you what value it has set.
 
 The Offset setting allows you to adjust the value set by the script. The default is zero, but I find that a value of 10 to 15 is effective as it allows for some use of cheap power before the sun rises as well as allowing some tolerance on the predicted solar yield for the next day. 
