@@ -1,6 +1,6 @@
 ##Error Messages
 
-The Meter6.5.py and Meter7.5.py scripts have the ability to display error messages when a problem occurs.
+The Meter6.6.py and Meter7.6.py scripts have the ability to display error messages when a problem occurs.
 Here are the relevant messages and what they mean:
 
 >Unable to contact cloud
