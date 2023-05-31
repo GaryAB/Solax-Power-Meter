@@ -13,10 +13,10 @@ With the Solcast module activated it displays an estimated overnight preload of 
 
 ![](/Pictures/Preload.jpg)
 
-Two scripts are included, Meter6.5.py which takes its data from the Solax Cloud (and may work with other inverters) and Meter7.5.py which takes its data directly from the inverter.
-Meter7.5.py updates every thirty seconds, whereas the SolaX Cloud is only updated once every five minutes.
+Two scripts are included, Meter6.x.py which takes its data from the Solax Cloud (and may work with other inverters) and Meter7.x.py which takes its data directly from the inverter.
+Meter7.x.py updates every thirty seconds, whereas the SolaX Cloud is only updated once every five minutes.
 
-Meter7.5.py also has the ability to set the battery preload automatically.
+Meter7.5.py and Meter7.6.py also have the ability to set the battery preload automatically.
 
 ![](/Pictures/Set_to.jpg) 
 
