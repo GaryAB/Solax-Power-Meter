@@ -28,7 +28,7 @@ Remember that Meter7.6 cannot access the internet when connected directly to the
 
 Solcast is not returning valid data. Check the Solcast Key and Resource ID from the Solcast website. Set up Solcast on the website if you have not already done so.
 
-The following errors only apply to Meter7.5:
+The following errors only apply to Meter7.6:
 
 >Inverter not found
 
