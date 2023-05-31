@@ -5,11 +5,11 @@ Here are the relevant messages and what they mean:
 
 >Unable to contact cloud
 
-Meter6.5.py has lost contact with the SolaX Cloud
+Meter6.6.py has lost contact with the SolaX Cloud
 
 >Unable to contact inverter
 
-Meter7.5.py has lost contact with the inverter
+Meter7.6.py has lost contact with the inverter
 
 Both these errors may only be temporary. The script will wait for 5 minutes then try again.
 If the message becomes permanent, check your WiFi and in the case of Meter6.5, your internet connection.
@@ -22,7 +22,7 @@ Check that your inverter password and in the case of Meter6.5, your API token, h
 >Unable to contact Solcast
 
 The script cannot access the Solcast website. Try the website in a browser to see if it is live: https://toolkit.solcast.com.au.
-Remember that Meter7.5 cannot access the internet when connected directly to the SolaX inverter's access point.
+Remember that Meter7.6 cannot access the internet when connected directly to the SolaX inverter's access point.
 
 >Data invalid from Solcast
 
@@ -32,22 +32,22 @@ The following errors only apply to Meter7.5:
 
 >Inverter not found
 
-Meter7.5 in DCHP mode has not been able to find the inverter on your local WiFi. This error may only be temporary. The script will wait for 5 minutes then try again.
+Meter7.6 in DCHP mode has not been able to find the inverter on your local WiFi. This error may only be temporary. The script will wait for 5 minutes then try again.
 If the message becomes permanent, check that you are connected to the right WiFi network. Check that the router's DCHP range has been entered correctly.
 
 Note: I have noticed that the inverter goes off-line occasionally, perhaps when it is accessing the Cloud. In this case, this message may appear but it will usually reconnect at the next attempt.
 
 >Wrong type of inverter
 
-The script is not connected to a single-phase SolaX X1-Hybrid-G4 inverter. In this case use Meter6.5.py instead.
+The script is not connected to a single-phase SolaX X1-Hybrid-G4 inverter. In this case use Meter6.6.py instead.
 
 >Unable to set preload to...
 
-For some reason Meter7.5 has been unable to automatically set the preload value. Use the SolaX Cloud or the SolaX app to set the preload manually.
+For some reason Meter7.6 has been unable to automatically set the preload value. Use the SolaX Cloud or the SolaX app to set the preload manually.
 
 >Charge from grid disabled
 
-Meter7.5 cannot set the preload as **Charge from grid** is disabled at the inverter. 
+Meter7.6 cannot set the preload as **Charge from grid** is disabled at the inverter. 
 Use the SolaX Cloud or the SolaX app to enable **Charge from grid** in **Self use** in the inverter settings. Make sure that **Work mode** is set to **Self use**.  
  
 >Inverter fault
