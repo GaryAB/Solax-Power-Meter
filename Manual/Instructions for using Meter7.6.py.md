@@ -56,7 +56,7 @@ The Offset setting allows you to adjust the value set by the script. The default
 
 Note that for this to work the inverteer must be in **Self Use** mode with **Charge from grid** enabled. This and the charge and discharge period need to be set from the SolaX app or SolaX Cloud as normal.
 
-Meter7.5 requires three external modules, **Solcast4.py**, **scan.py** and **set.py**.
+Meter7.6 requires three external modules, **Solcast4.py**, **scan.py** and **set.py**.
 
 The script also creates two temporary files on your drive. **power.json** stores the details from the last access to the inverter and allows the script to resume after a restart.
 **daymeans.json** stores average daily power usage to be used by the Solcast module.
