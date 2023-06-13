@@ -495,8 +495,9 @@ while True:
         else:
           preload = 10
           pMessage = "No recommended preload tonight"
+        solDone = 1
       display(pMessage,"blue")
-      solDone = 1
+     
 
       # set battery overnight preload
       if (preloadSet.upper() == "AUTO") and (type(preload) == int):
