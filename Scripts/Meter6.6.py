@@ -423,8 +423,9 @@ while t < 2000000:
         else:
           preload = 10
           pMessage = "No recommended preload tonight"
+        solDone = 1
       display(pMessage,"blue")
-      solDone = 1
+      
     
   if nightGood == 1:
     if (int(nowTime.strftime("%H")) >= startCheapRate and int(nowTime.strftime("%H")) < endCheapRate):
