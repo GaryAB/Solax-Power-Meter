@@ -17,7 +17,7 @@ def isOpen(ip, port, inverterPassword):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(0.5)
         fip = 'http://' + ip
-        #print(ip)
+        print(ip)
         try:
             s.connect((ip, int(port)))
             s.shutdown(socket.SHUT_RDWR)
@@ -28,7 +28,7 @@ def isOpen(ip, port, inverterPassword):
             x = requests.post(fip, data=data, timeout=5)
             x = (x.text)
             if x[7:17] == inverterPassword:
-                #print ('Found')
+                print ('Found')
                 return ip
                       
         except Exception as e:
