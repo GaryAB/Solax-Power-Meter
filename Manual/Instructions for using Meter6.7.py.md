@@ -15,7 +15,7 @@ The values logged are, Solar yield, Battery use, Grid power used during daytime,
 These values are not logged by the SolaX cloud, but are calculated by the script, therefore for accurate values the script must run continuously.
 Each 24 hours starts at the beginning of the off-peak period or midnight if no off-peak is set.
 Note that when you first run the script, the first day's log may not be recorded or my be incomplete.
-Also due to the discontinuous nature of the monitoring of the inverter by the SolaX Cloud, the values for Solar Yield and Battery Use should be considerd as estimates.
+Also due to the discontinuous nature of the monitoring of the inverter by the SolaX Cloud, the values for Solar Yield, Battery Use and Export to grid should be considered as estimates.
 
 The script creates two temporary files on your drive. **power.json** stores the details from the last access to the inverter and allows the script to resume quickly after a restart.
 **daymeans.json** stores average daily power usage for the Solcast module.
