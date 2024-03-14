@@ -16,7 +16,7 @@ The script can create a log file called **powerlog.csv** which can be entered in
 The values logged are, Solar yield, Battery use, Grid power used during daytime, Grid power used during nighttime off-peak, Exported energy to the grid over the previous 24 hours. Note that for this purpose the 24 hours starts at the beginning of the off peak period.
 These values are not logged by the SolaX cloud, but are calculated by the script, therefore for accurate values the script must run continuously.
 Each 24 hours starts at the beginning of the off-peak period or midnight if no off-peak is set.
-Note that when you first run the script, the first day's log may not be recorded or my be incomplete.
+Note that when you first run the script, the first day's log may not be recorded or may be incomplete.
 
 The script also creates two temporary files on your drive. **power.json** stores the details from the last access to the inverter and allows the script to resume after a restart. **daymeans.json** stores average daily power usage to be used by the Solcast module.
 
