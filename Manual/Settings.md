@@ -30,10 +30,14 @@ Note that the tokenId is not essential for Meter7.7.py as it does not use the So
 If you have peak and off-peak electricity tariffs, put the time of the start of each into the next four lines. The default settings relate to 'Economy 7' in the UK. 
 If your energy supplier has a rate change which occurs other than on the hour, you can set the number of minutes after the hour.
 
-startCheapRate = 0                #Start of cheap rate electricity in hours (LOCAL or UTC, See below)
-crMins = 0                        #Set to minutes if cheap rate starts at a time other than on the hour
-endCheapRate = 7                  #Start of full rate electricity in hours (LOCAL or UTC, See below)
-prMins = 0                        #Set to minutes if peak rate starts at a time other than on the hour
+>startCheapRate = 0                #Start of cheap rate electricity in hours (LOCAL or UTC, See below)
+>
+>crMins = 0                        #Set to minutes if cheap rate starts at a time other than on the hour
+>
+>endCheapRate = 7                  #Start of full rate electricity in hours (LOCAL or UTC, See below)
+>
+>prMins = 0                        #Set to minutes if peak rate starts at a time other than on the hour
+>
 
 If you do not receive off-peak power overnight, set all these values to zero.
 
@@ -62,9 +66,13 @@ If not, then enter **dchp** between the quotation marks. When you run the script
 You also need to enter the DCHP range of your router on the two following lines. The default values will be correct for most domestic routers as supplied by your ISP. 
 
 >inverterAddress = 'dchp'          #address of inverter - use '5.8.8.8' if logged into inverter's access point
+>
 >                                  #if the address is not static,  enter 'dchp'
+>
 >                                  #Set DCHP range of your router on the lines below
+>
 >From = '192.168.1.1'              #Start of address range for DCHP allocation
+>
 >To = '192.168.1.254'              #End of address range for DCHP allocation
 
 Note that if the DCHP range is large, the search process may take several minutes.
