@@ -26,7 +26,9 @@ If you do not know which region you are in, the map is currently available at:ht
 The appropriate region must be entered into **Settings.py**. Take particular note of the spelling and capitalisation above as the text has to be indentical to that in the API.
 
 >octopus = "YES"                   #set to "YES" to automatically reset battery discharge time if an Octopus Saving Session is happening
+
 >region = "East England"           #set to your National Grid region - see Octopus instructions
+
 >ssExport = "YES"                  #set to "YES" to export during saving sessions
 
 When the saving session is detected, the discharge start time is adjusted to the start of the savings session. If **ssExport** is set to "YES" then the batteries will export during the saving session to increase the posible return. When the saving session is complete, the system will be returned to its normal automatic mode. Note that if you are normally setting the discharge start time manually, you will have to do so again after the saving session is complete. As well as the settings in Settings.py, the Octopus function can be turned on and off in the Control Panel.
