@@ -68,11 +68,11 @@ You also need to enter the DCHP range of your router on the two following lines.
 
 >inverterAddress = 'dchp'          #address of inverter - use '5.8.8.8' if logged into inverter's access point
 
->                                  #or 192.168.10.10 if you have the later WiFI module.
+>#or 192.168.10.10 if you have the later WiFI module.
 
->                                  #if logging into your house WiFi and the address is not static,  enter 'dchp'
+>#if logging into your house WiFi and the address is not static,  enter 'dchp'
 
->                                  #Set DCHP range of your router on the lines below
+>#Set DCHP range of your router on the lines below
 
 >From = '192.168.1.1'              #Start of address range for DCHP allocation
 
