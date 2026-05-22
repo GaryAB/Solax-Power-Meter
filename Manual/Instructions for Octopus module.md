@@ -7,18 +7,31 @@ Power Meter detects when Octopus' bid to save power hae been accepted by reading
 As the bids are regionalised, it is important that Power Meter knows which region you live in. The respective regions are:  
 
 North Scotland
+
 South and Central Scotland
+
 North East England
+
 North West England
+
 Yorkshire
+
 East Midlands
+
 West Midlands
+
 London
+
 East England
+
 South East England
+
 South West England
+
 Southern England
+
 North Wales Merseyside and Cheshire
+
 South Wales
 
 If you do not know which region you are in, the map is currently available at:https://www.neso.energy/data-portal/gis-boundaries-gb-dno-license-areas/gb_dno_licence_areas_20240503
