@@ -30,10 +30,10 @@ Note that the tokenId is not essential for Meter7.7.py onwards as they do not us
 If you have peak and off-peak electricity tariffs, put the time of the start of each into the next four lines. The default settings relate to 'Economy 7' in the UK. 
 If your energy supplier has a rate change which occurs other than on the hour, you can set the number of minutes after the hour.
 
-startCheapRate = 0                #Start of cheap rate electricity in hours (LOCAL or UTC, See below)
-crMins = 0                        #Set to minutes if cheap rate starts at a time other than on the hour
-endCheapRate = 7                  #Start of full rate electricity in hours (LOCAL or UTC, See below)
-prMins = 0                        #Set to minutes if peak rate starts at a time other than on the hour
+>startCheapRate = 0                #Start of cheap rate electricity in hours (LOCAL or UTC, See below)
+>crMins = 0                        #Set to minutes if cheap rate starts at a time other than on the hour
+>endCheapRate = 7                  #Start of full rate electricity in hours (LOCAL or UTC, See below)
+>prMins = 0                        #Set to minutes if peak rate starts at a time other than on the hour
 
 If you do not receive off-peak power overnight, set all these values to zero.
 
