@@ -89,12 +89,11 @@ To enable this function set dischargeDelay to "AUTO".
 
 Set noDelay to the earliest time that you want the batteries to start discharging. Default is 8am. This is the setting you would normally use in the SolaX app.
 
->noDelay = 8                       #set earliest time for battery discharge in hours. e.g. 8 means 8am, 13 means 1pm.
+>noDelay = 7                       #set earliest time for battery discharge in hours. e.g. 8 means 8am, 13 means 1pm.
 
 The run setting should be set to 'AUTO' if you are using the script as an embedded system, otherwise leave as 'MANUAL'. 
 
-The next settings are for use of the Octopus functions for those that use Ostopus as their electrcity supplier. For
- details of these read the instructions for the Octopus module.
+The next settings are for use of the Octopus functions for those who use Octopus as their electricity supplier. For details of these, read the instructions for the Octopus module.
  
 The final settings are for use of the Solcast module. Read the relevant instructions to set these.
 
