@@ -67,10 +67,15 @@ If not, then enter **dchp** between the quotation marks. When you run the script
 You also need to enter the DCHP range of your router on the two following lines. The default values will be correct for most domestic routers as supplied by your ISP. 
 
 >inverterAddress = 'dchp'          #address of inverter - use '5.8.8.8' if logged into inverter's access point
+
 >                                  #or 192.168.10.10 if you have the later WiFI module.
+
 >                                  #if logging into your house WiFi and the address is not static,  enter 'dchp'
+
 >                                  #Set DCHP range of your router on the lines below
+
 >From = '192.168.1.1'              #Start of address range for DCHP allocation
+
 >To = '192.168.1.254'              #End of address range for DCHP allocation
 
 Note that if the DCHP range is large, the search process may take several minutes.
