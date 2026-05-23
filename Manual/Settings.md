@@ -53,7 +53,7 @@ Power Meter 6.7 and 7.7 onwards now also have the ability to create a log of ene
 
 >log = "YES"                       #set to "YES" to log data to a CSV file
 
-**The next settings apply only to Meter7.7.py**
+**The next settings apply only to Meter7.8.py**
 
 Meter7.8 can be used in two ways. You can either log into the inverter's WiFi access point (AP) directly or you can contact the inverter via your house WiFi.
 The SSID of the inverter starts with WiFi_S followed by nine digits.
