@@ -27,7 +27,3 @@ If updating from a previous version of the script, you must delete the old **pow
 
 As well as **Settings.py**, Meter7.8 requires several external modules, **Solcast4.py**, **Week2.py**, **scan.py**, **set3.py**, **powerlog.py**, **Freefind2.py**, **Info3.py**, **Octopus5.py**, **SetTimes.py**, **Cog.gif** and **Exit.gif**, all of which must be in the same directory as the main script.
 It also requires **graphics.py** by John Zelle, which is included in the repository. 
-
- 
-
-+
