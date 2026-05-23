@@ -55,11 +55,11 @@ Power Meter 6.7 and 7.7 onwards now also have the ability to create a log of ene
 
 **The next settings apply only to Meter7.8.py**
 
-Meter7.8 can be used in two ways. You can either log into the inverter's WiFi access point (AP) directly or you can contact the inverter via your house WiFi.
+Meter7.8 can be used in two ways. You can either log into the inverter's WiFi access point (AP) directly, or you can contact the inverter via your house WiFi.
 The SSID of the inverter starts with WiFi_S followed by nine digits.
-In this case, you should leave the IP number in the script to the default '5.8.8.8'. If you have the newer Wifi module on the inverter with 10-second updates, the IP number needs to be 192.168.10.10. 
+In this case, you should set the IP number in the script to '5.8.8.8'. If you have the newer Wifi module on the inverter with 10-second updates, the IP number needs to be 192.168.10.10. 
 
-**Note** I have recently been told that later versions of the software on SolaX inverters no longer allow access to the API via your house WiFi. In this case you **must** operate Meter 7.8 connected to the inverter's AP. This will mean that you will lose the ability to use the Solcast and Octopus modules, as you will not have access to the internet. 
+**Note** I have recently been told that later versions of the software on SolaX inverters no longer allow access to the API via your house WiFi. In this case, you **must** operate Meter 7.8 connected to the inverter's AP. This will mean that you will lose the ability to use the Solcast and Octopus modules, as you will not have access to the internet. 
 
 To connect via your house WiFi, you need to know whether your inverter has been set with a static IP number or whether it is allocated by your router.
 If you know that the IP address is static, then enter that address into the Inverter Address line in the script.
@@ -87,9 +87,9 @@ To enable this function, set dischargeDelay to "AUTO".
 
 >dischargeDelay = "AUTO"           #set to "AUTO" if you wish to use the discharge delay facility
 
-Set noDelay to the earliest time that you want the batteries to start discharging. The default is 7am. This is the setting you would normally use in the SolaX app.
+Set noDelay to the earliest time that you want the batteries to start discharging. The default is 7 am. This is the setting you would normally use in the SolaX app.
 
->noDelay = 7                       #set earliest time for battery discharge in hours. e.g. 8 means 8am, 13 means 1pm.
+>noDelay = 7                       #set earliest time for battery discharge in hours. e.g. 8 means 8 am, 13 means 1 pm.
 
 The run setting should be set to 'AUTO' if you are using the script as an embedded system; otherwise, leave it as 'MANUAL'. 
 
