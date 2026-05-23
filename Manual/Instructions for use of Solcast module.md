@@ -12,9 +12,9 @@ In *Site Summary*, you will see a Resource ID. Click on this, and it will be cop
 
 >resourceID = 'XXXX-XXXX-XXXX-XXXX' # obtain from Solcast website
 
-In the download section near the bottom of the page, select *Find your API key here*. Click *Copy Key* then paste it into the solcastKey line in Settings.py
+In the download section near the bottom of the page, select *Find your API key here*. Click *Copy Key*, then paste it into the solcastKey line in Settings.py
 
-![](/Pictures/SolcastAPII.jpg)
+![](/Pictures/SolcastAPI.jpg)
 
 >solcastKey = 'ABCDEFGHIJKLMONPQRSTUVWXYZ123456' # obtain from Solcast website
 
