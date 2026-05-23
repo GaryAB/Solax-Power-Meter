@@ -16,12 +16,12 @@ If the message becomes permanent, check your WiFi and in the case of Meter6.7, y
 
 >Too many failures contacting cloud/inverter
 
-The cloud or inverter are not returning valid data. The script will try 5 times to get valid data and if it fails this message will appear.
-Check that your inverter password and in the case of Meter6.7, your API token, have been entered correctly.
+The cloud or the inverter is not returning valid data. The script will try 5 times to get valid data, and if it fails, this message will appear.
+Check that your inverter password and, in the case of Meter6.7, your API token, have been entered correctly.
 
 >Unable to contact Solcast
 
-The script cannot access the Solcast website. Try the website in a browser to see if it is live: [https://toolkit.solcast.com.au/] {https://toolkit.solcast.com.au/}
+The script cannot access the Solcast website. Try the website in a browser to see if it is live: [https://toolkit.solcast.com.au/](https://toolkit.solcast.com.au/)
 Remember that Meter7.8 cannot access the internet when connected directly to the SolaX inverter's access point.
 
 >Data invalid from Solcast
@@ -32,22 +32,22 @@ The following errors only apply to Meter7.8:
 
 >Inverter not found
 
-Meter7.8 in DCHP mode has not been able to find the inverter on your local WiFi. This error may only be temporary. The script will wait for 5 minutes then try again.
+Meter7.8 in DCHP mode has not been able to find the inverter on your local WiFi. This error may only be temporary. The script will wait for 5 minutes, then try again.
 If the message becomes permanent, check that you are connected to the right WiFi network. Check that the router's DCHP range has been entered correctly.
 
-Note: I have noticed that the inverter goes off-line occasionally, perhaps when it is accessing the Cloud. In this case, this message may appear but it will reconnect at the next attempt.
+Note: I have noticed that the inverter goes offline occasionally, perhaps when it is accessing the Cloud. In this case, this message may appear, but it will reconnect at the next attempt.
 
 >Wrong type of inverter
 
-The script is not connected to a single-phase SolaX X1-Hybrid-G4 inverter. In this case use Meter6.7.py instead.
+The script is not connected to a single-phase SolaX X1-Hybrid-G4 inverter. In this case, use Meter6.7.py instead.
 
 >Unable to set preload to...
 
-For some reason Meter7.8 has been unable to automatically set the preload value. Use the SolaX Cloud or the SolaX app to set the preload manually.
+For some reason, Meter7.8 has been unable to automatically set the preload value. Use the SolaX Cloud or the SolaX app to set the preload manually.
 
 >Discharge time not set
 
-For some reason Meter7.8 has been unable to set the battery discharge start time. Use the SolaX cloud or the SolaX app to check the current setting and change it if necessary.
+For some reason, Meter7.8 has been unable to set the battery discharge start time. Use the SolaX cloud or the SolaX app to check the current setting and change it if necessary.
 
 >Charge from grid disabled
 
