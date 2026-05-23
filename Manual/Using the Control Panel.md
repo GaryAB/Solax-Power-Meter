@@ -32,9 +32,12 @@ Pressing the **Block** button (illuminated in Red) will prevent the batteries fr
 The batteries will always charge from solar power, whichever button is pressed.
 
 The bottom row controls the battery discharge.
-You can adjust the discharge times in a similar way to the charge times
+You can adjust the discharge times in a similar way to the charge times.
+
 Pressing **Block** will prevent the batteries from discharging
+
 Pressing **Force** will force the batteries to discharge to the house.
+
 Pressing **Export** will force the batteries to discharge, but any excess power not required by the house will be sent to the grid.
 
 Do not forget to press **Return** to close the Control Panel after you have used it as that will allow the script to continue.
