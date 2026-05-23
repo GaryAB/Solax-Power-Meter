@@ -35,6 +35,7 @@ The script will continue to display the result until 1am allowing plenty of time
 If **preloadSet** is set to 'AUTO' then scripts Meter7.7.py and later will automatically set the preload for the batteries.
 
 >preloadSet = "AUTO"               #Set to "AUTO" to allow app to automatically set the overnight charging limit.
+
 >offset = 30                       #percentage offset added to recommended preload
 
 A percentage offset can be added to the preload setting in order to account for local differences to the prediction, e.g. partial shading by a tree.
@@ -42,6 +43,7 @@ A percentage offset can be added to the preload setting in order to account for 
 **dischargeDelay** if set to AUTO will allow the script to set a delay of up to eight hours to the use of the batteries on days of low sun, in order that power is retained for use in the peak hours in the evening, rather than using all of the battery power first thing in the morning. 
 
 >dischargeDelay = "MANUAL"         #set to "AUTO" if you wish to use the discharge delay facility
+
 >noDelay = 7                       #set earliest time for battery discharge in hours. e.g. 8 means 8am, 13 means 1pm.
 
 **noDelay** sets the earliest time that the batteries will discharge on days of good sunlight. 
