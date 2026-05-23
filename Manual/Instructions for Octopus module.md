@@ -1,8 +1,8 @@
 ###Instructions for use of Octopus functions
 
-Power Meter v.7.10 can now automatically detect an Octopus Saving Session and control the inverter durng the session. 
+Power Meter v.7.10 can now automatically detect an Octopus Saving Session and control the inverter during the session. 
 
-Power Meter detects when Octopus' bid to save power hae been accepted by reading the National Grid API. This does not guarantee that you will be offered a saving session, but one is at least taking place in your area..
+Power Meter detects when Octopus' bid to save power has been accepted by reading the National Grid API. This does not guarantee that you will be offered a saving session, but one is at least taking place in your area..
 
 As the bids are regionalised, it is important that Power Meter knows which region you live in. The respective regions are:  
 
@@ -44,13 +44,13 @@ The appropriate region must be entered into **Settings.py**. Take particular not
 
 >ssExport = "YES"                  #set to "YES" to export during saving sessions
 
-When the saving session is detected, the discharge start time is adjusted to the start of the savings session. If **ssExport** is set to "YES" then the batteries will export during the saving session to increase the posible return. When the saving session is complete, the system will be returned to its normal automatic mode. Note that if you are normally setting the discharge start time manually, you will have to do so again after the saving session is complete. As well as the settings in Settings.py, the Octopus function can be turned on and off in the Control Panel.
+When the saving session is detected, the discharge start time is adjusted to the start of the savings session. If **ssExport** is set to "YES" then the batteries will export during the saving session to increase the possible return. When the saving session is complete, the system will be returned to its normal automatic mode. Note that if you are normally setting the discharge start time manually, you will have to do so again after the saving session is complete. As well as the settings in Settings.py, the Octopus function can be turned on and off in the Control Panel.
 
 **Octopus Free Sessions**
 
-At present these cannot be automatically detected, but if you are offered one, you can turn the **Free Session** function on in the Control Panel. These sessions will normally be offered the day before, so when you receive one, turn the Control Panel option on and you will then be presented with a scroll panel to set the start and end times. Press return and then close the control panel.
+At present, these cannot be automatically detected, but if you are offered one, you can turn the **Free Session** function on in the Control Panel. These sessions will normally be offered the day before, so when you receive one, turn the Control Panel option on, and you will then be presented with a scroll panel to set the start and end times. Press return and then close the control panel.
 
-The overnight preload, if set automatically, will be reduced to allow some space in the batteries ready for the free session. When the free session starts, the batteries will be switched to charge from the grid until either the session ends or the batteries reach 95% full. At this point the session will end and the status returned to normal.
+The overnight preload, if set automatically, will be reduced to allow some space in the batteries ready for the free session. When the free session starts, the batteries will be switched to charge from the grid until either the session ends or the batteries reach 95% full. At this point, the session will end, and the status will return to normal.
 
 Remember that the Octopus functions will only operate if you are accessing the inverter via your local network and your Raspberry Pi still has access to the internet.
 
