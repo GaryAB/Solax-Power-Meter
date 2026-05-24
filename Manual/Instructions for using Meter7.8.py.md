@@ -10,13 +10,13 @@ For details on editing this file, read **Settings.md** in the **Manual** folder.
 Meter7.8.py displays PV power, battery power, excess power to the grid and the current battery state of charge.
 Also displays power used from the grid during peak (daytime) and off-peak (nighttime) periods.
 
-With the Solcast module activated it displays an estimated overnight preload of the battery to make the best use of both PV power and battery power.
-Meter7.8.py also has the ability to set the battery preload automatically, and on days with little solar yield can delay the use of batteries until the early evening. For this purpose, Meter 7.8 also learns your average useage of electricity on each day of the week. 
+With the Solcast module activated, it displays an estimated overnight preload of the battery to make the best use of both PV power and battery power.
+Meter7.8.py also has the ability to set the battery preload automatically, and on days with little solar yield can delay the use of batteries until the early evening. For this purpose, Meter 7.8 also learns your average usage of electricity on each day of the week. 
 
-Pressing or clicking on the cogwheel symbol at the top left of the screen opens a control panel which enables you to change the mode of the inverter or change the set charge and discharge times. For further details read **Using the Control Panel**.
+Pressing or clicking on the cogwheel symbol at the top left of the screen opens a control panel which enables you to change the mode of the inverter or change the set charge and discharge times. For further details, read **Using the Control Panel**.
 
 The script can create a log file called **powerlog.csv**, which can be entered into a spreadsheet program for further processing.
-The values logged are, Solar yield, Battery use, Grid power used during daytime, Grid power used during nighttime off-peak, and Exported energy to the grid over the previous 24 hours. Note that for this purpose the 24 hours start at the beginning of the off-peak period.
+The values logged are Solar yield, Battery use, Grid power used during daytime, Grid power used during nighttime off-peak, and Exported energy to the grid over the previous 24 hours. Note that for this purpose, the 24 hours start at the beginning of the off-peak period.
 These values are not logged by the SolaX cloud, but are calculated by the script; therefore, for accurate values, the script must run continuously.
 Each 24 hours starts at the beginning of the off-peak period or midnight if no off-peak period is set.
 Note that when you first run the script, the first day's log may not be recorded or may be incomplete.
