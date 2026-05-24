@@ -81,7 +81,7 @@ You also need to enter the DCHP range of your router on the two following lines.
 Note that if the DCHP range is large, the search process may take several minutes.
 
 In addition, Meter 7.8 has a facility which delays the start of the battery discharge phase on days of very poor solar yield so that there is still power available from the batteries in the early evening, when the grid is under the greatest load.
-On certain tariffs, this will also save money (e.g. Octopus Flux).
+On certain tariffs, this will also save you money (e.g. Octopus Flux).
 This function delays the discharge start time for up to eight hours, depending on the estimated daytime usage. 
 To enable this function, set dischargeDelay to "AUTO".
 
