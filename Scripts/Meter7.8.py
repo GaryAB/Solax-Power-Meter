@@ -466,6 +466,7 @@ if os.path.exists("power.json"):
     localDataJson = f.read()
     if localDataJson == "":
         f.close()
+        errlog("Zero length backup file")
         os.remove("power.json")
         os.system ('sudo reboot')     
     localData = json.loads(localDataJson)
