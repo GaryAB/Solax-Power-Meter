@@ -1,8 +1,8 @@
 ###Instructions for use of Octopus functions
 
-Power Meter v.7.8 can now automatically detect an Octopus Saving Session and control the inverter durng the session. 
+Power Meter v.7.8 can now automatically detect an Octopus Saving Session and control the inverter during the session. 
 
-Power Meter detects when Octopus' bid to save power hae been accepted by reading the National Grid API. This does not guarantee that you will be offered a saving session, but one is at least taking place in your area..
+Power Meter detects when Octopus' bid to save power has been accepted by reading the National Grid API. This does not guarantee that you will be offered a saving session, but one is at least taking place in your area..
 
 As the bids are regionalised, it is important that Power Meter knows which region you live in. The regions have recently been reorganised and now have numbers rather than names.
 
