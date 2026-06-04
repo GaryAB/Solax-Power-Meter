@@ -20,7 +20,7 @@ def check():
 
     localTime = datetime.datetime.now()
     date = (str(localTime)[0:10])
-    url = 'https://api.neso.energy/api/3/action/datastore_search?resource_id=cc36fff5-5f6f-4fde-8932-c935d982ecd8'
+    url = 'https://api.neso.energy/api/3/action/datastore_search?resource_id=3ebf77d7-05df-466e-a023-dc45a90efeea'
     sessDate = date
     stop = 0
     stop1 = 0
@@ -51,14 +51,14 @@ def check():
         if status != "Accepted":
           id = id + 1
           continue
-        level = (record[region])
+        level = (record["Zone"])
         if level == 0:
           id = id + 1
           continue
         
-        if record["From"] != endTime:
-          startTime = record["From"]
-        endTime = record["To"]
+        if record["From_Local"] != endTime:
+          startTime = record["From_Local"]
+        endTime = record["To_Local"]
         sessDate = record["Delivery Date"]
         status = record["Status"]
         startHour = int(startTime[0:2])
