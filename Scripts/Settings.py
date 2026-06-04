@@ -27,7 +27,7 @@ run = "MANUAL"                    #Change to "AUTO" if running script automatica
 # The following settings are for Meter 7.8 onwards only
 
 octopus = "NO"                   #set to "YES" to automatically reset battery discharge time if an Octopus Saving Session is happening
-region = "London"                #set to your National Grid region - see Octopus instructions
+region = 10                      #set to your National Grid region - see Octopus instructions
 ssExport = "NO"                  #set to "YES" to export during saving sessions
 
 # The following settings are for the Solcast addon
