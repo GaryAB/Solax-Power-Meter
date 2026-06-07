@@ -10,7 +10,7 @@ First, change the ‘run’ line in **Settings.py** to “AUTO”
 
 This modifies the script slightly, including adding a twenty-second delay at startup to allow the GUI on the Raspberry Pi to fully boot up and connect to WiFi.
 
-Next, open the command line window and type the following:
+Next, open the command line window on the Raspberry Pi and type the following:
 
 >sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 
