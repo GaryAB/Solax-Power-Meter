@@ -21,6 +21,10 @@ Meter7.5.py to Meter7.8.py also have the ability to set the battery preload auto
 
 ![](/Pictures/Set_to.jpg) 
 
+Meter7.8.py adds a control panel to alter app settings and change the operation of the inverter.
+
+![](/Pictures/Control.jpg)
+
 Full instructions in the **manual** folder
  
 
