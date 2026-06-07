@@ -8,7 +8,7 @@ This file can be edited with any text editor, but please take care and make sure
 For details on editing this file, read **Settings.md** in the **Manual** folder.
 
 Meter7.8.py displays PV power, battery power, excess power to the grid and the current battery state of charge.
-Also displays power used from the grid during peak (daytime) and off-peak (nighttime) periods.
+Also displays the energy used from the grid during peak (daytime) and off-peak (nighttime) periods.
 
 With the Solcast module activated, it displays an estimated overnight preload of the battery to make the best use of both PV power and battery power.
 Meter7.8.py also has the ability to set the battery preload automatically, and on days with little solar yield can delay the use of batteries until the early evening. For this purpose, Meter 7.8 also learns your average usage of electricity on each day of the week. 
