@@ -6,7 +6,7 @@ This file can be edited with any text editor, but please take care and make sure
 For details on editing this file, read **Settings.md** in the **Manual** folder.
 
 Meter6.7.py displays PV power, battery power, excess power to the grid and the current battery state of charge.
-Also displays power used from the grid during peak (daytime) and off-peak (nighttime) periods.
+Also displays the energy used from the grid during peak (daytime) and off-peak (nighttime) periods.
 
 With the Solcast module activated, it displays an estimated overnight preload of the battery to make the best use of both PV power and battery power.
 
