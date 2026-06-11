@@ -1,4 +1,5 @@
 from graphics import *
+import os
 import time
 import json
 import SetTimes
@@ -572,14 +573,15 @@ def saveTimes(chargeStart,chargeEnd,dischargeStart,dischargeEnd):
     f.close()
 
 def getTimes():
-    f = open("times.json", "r")
-    dataJson = f.read()
-    data = json.loads(dataJson)
-    chargeStart = data["chargeStart"]
-    chargeEnd = data["chargeEnd"]
-    dischargeStart = data["dischargeStart"]
-    dischargeEnd = data["dischargeEnd"]
-    return chargeStart,chargeEnd,dischargeStart,dischargeEnd
+    if os.path.exists("times.json"):
+        f = open("times.json", "r")
+        dataJson = f.read()
+        data = json.loads(dataJson)
+        chargeStart = data["chargeStart"]
+        chargeEnd = data["chargeEnd"]
+        dischargeStart = data["dischargeStart"]
+        dischargeEnd = data["dischargeEnd"]
+        return chargeStart,chargeEnd,dischargeStart,dischargeEnd
 
 def byteTime(byte):
     mins = int(int(byte)/256)
