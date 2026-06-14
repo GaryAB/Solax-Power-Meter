@@ -1,6 +1,12 @@
 from graphics import *
 import time
 
+# Dummy data
+shrs = 0
+smins = 30
+ehrs = 4
+smins = 30
+
 def setTimes(shrs,smins,ehrs,emins,cText,win,infoWin):
 
     timesWin = GraphWin("Set Times",400,350)
@@ -102,7 +108,7 @@ def doScrollBox(timesWin,shrs,smins,ehrs,emins,win,infoWin):
                     shrs = 23
 
             if (m.x > x+210) and (m.x < x+240) and (m.y > y) and (m.y < y+30):
-                smins = smins+1
+                smins = (10*int(smins/10))+10
                 if smins == 60:
                     smins = 0
                     shrs = shrs+1
@@ -130,7 +136,7 @@ def doScrollBox(timesWin,shrs,smins,ehrs,emins,win,infoWin):
                     ehrs = 23
 
             if (m.x > x+210) and (m.x < x+240) and (m.y > y) and (m.y < y+30):
-                emins = emins+1
+                emins = (10*int(emins/10))+10
                 if emins == 60:
                     emins = 0
                     ehrs = ehrs+1
