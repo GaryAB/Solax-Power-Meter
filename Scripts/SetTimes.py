@@ -7,6 +7,7 @@ smins = 30
 ehrs = 4
 smins = 30
 
+
 def setTimes(shrs,smins,ehrs,emins,cText,win,infoWin):
 
     timesWin = GraphWin("Set Times",400,350)
@@ -75,6 +76,10 @@ def drawScrollBox(timesWin,x,y,timeString, win, infoWin):
     text.draw(timesWin)
 
 def doScrollBox(timesWin,shrs,smins,ehrs,emins,win,infoWin):
+
+    sDraw = 0
+    eDraw = 0
+
     while True:
    # Mouse click on master window
         m = win.checkMouse()
@@ -98,16 +103,19 @@ def doScrollBox(timesWin,shrs,smins,ehrs,emins,win,infoWin):
             x = 80
             y = 50
             if (m.x > x) and (m.x < x+30) and (m.y > y) and (m.y < y+30):
+                sDraw = 1
                 shrs = shrs+1
                 if shrs == 24:
                     shrs = 0
 
             if (m.x > x) and (m.x < x+30) and (m.y > y+40) and (m.y < y+70):
+                sDraw = 1
                 shrs = shrs-1
                 if shrs == -1:
                     shrs = 23
 
             if (m.x > x+210) and (m.x < x+240) and (m.y > y) and (m.y < y+30):
+                sDraw = 1
                 smins = (10*int(smins/10))+10
                 if smins == 60:
                     smins = 0
@@ -116,6 +124,7 @@ def doScrollBox(timesWin,shrs,smins,ehrs,emins,win,infoWin):
                         shrs = 0
 
             if (m.x > x+210) and (m.x < x+240) and (m.y > y+40) and (m.y < y+70):
+                sDraw = 1
                 smins = smins-1
                 if smins == -1:
                     smins = 59
@@ -126,16 +135,19 @@ def doScrollBox(timesWin,shrs,smins,ehrs,emins,win,infoWin):
             x = 80
             y = 180
             if (m.x > x) and (m.x < x+30) and (m.y > y) and (m.y < y+30):
-                ehrs = ehrs+1
-                if ehrs == 24:
+                 eDraw = 1
+                 ehrs = ehrs+1
+                 if ehrs == 24:
                     ehrs = 0
 
             if (m.x > x) and (m.x < x+30) and (m.y > y+40) and (m.y < y+70):
+                eDraw = 1
                 ehrs = ehrs-1
                 if ehrs == -1:
                     ehrs = 23
 
             if (m.x > x+210) and (m.x < x+240) and (m.y > y) and (m.y < y+30):
+                eDraw = 1
                 emins = (10*int(emins/10))+10
                 if emins == 60:
                     emins = 0
@@ -144,6 +156,7 @@ def doScrollBox(timesWin,shrs,smins,ehrs,emins,win,infoWin):
                         ehrs = 0
 
             if (m.x > x+210) and (m.x < x+240) and (m.y > y+40) and (m.y < y+70):
+                eDraw = 1
                 emins = emins-1
                 if emins == -1:
                     emins = 59
@@ -151,25 +164,32 @@ def doScrollBox(timesWin,shrs,smins,ehrs,emins,win,infoWin):
                     if ehrs == -1:
                         ehrs = 23
 
-            x = 80
-            y = 50
-            rect = Rectangle(Point(x+30,y), Point(x+210,y+70))
-            rect.setFill('White')
-            rect.draw(timesWin)
+            if sDraw == 1:
+                x = 80
+                y = 50
+                rect = Rectangle(Point(x+30,y), Point(x+210,y+70))
+                rect.setFill('White')
 
-            text = Text(Point(x+120,y+35),str(shrs) + ':' + str(smins+100)[1:3])
-            text._reconfig("font",("Arial",40,"normal"))
-            text.draw(timesWin)
+                text = Text(Point(x+120,y+35),str(shrs) + ':' + str(smins+100)[1:3])
+                text._reconfig("font",("Arial",40,"normal"))
+                rect.draw(timesWin)
+                time.sleep(0.04)
+                text.draw(timesWin)
+                sDraw = 0
+                
 
-            x = 80
-            y = 180
-            rect = Rectangle(Point(x+30,y), Point(x+210,y+70))
-            rect.setFill('White')
-            rect.draw(timesWin)
+            if eDraw == 1:
+                x = 80
+                y = 180
+                rect = Rectangle(Point(x+30,y), Point(x+210,y+70))
+                rect.setFill('White')
 
-            text = Text(Point(x+120,y+35),str(ehrs) + ':' + str(emins+100)[1:3])
-            text._reconfig("font",("Arial",40,"normal"))
-            text.draw(timesWin)
+                text = Text(Point(x+120,y+35),str(ehrs) + ':' + str(emins+100)[1:3])
+                text._reconfig("font",("Arial",40,"normal"))
+                rect.draw(timesWin)
+                time.sleep(0.04)
+                text.draw(timesWin)
+                eDraw = 0
 
             time.sleep(0.1)
 
@@ -241,10 +261,11 @@ def doScrollPercent(timesWin,percent, win, infoWin):
 
             rect = Rectangle(Point(x+30,y), Point(x+210,y+70))
             rect.setFill('White')
-            rect.draw(timesWin)
 
             text = Text(Point(x+120,y+35),str(percent) + '%')
             text._reconfig("font",("Arial",40,"normal"))
+            rect.draw(timesWin)
+            time.sleep(0.04)
             text.draw(timesWin)
 
 
