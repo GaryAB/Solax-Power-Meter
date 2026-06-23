@@ -19,7 +19,7 @@ Normally, the **Auto** button will be pressed (Green), allowing the inverter to 
 
 ![](/Pictures/Nudge.jpg)
 
-Tapping on the up and down arrows will set the times. The up-arrow on minutes moves the time forward by ten seconds. The down-arrow moves backwards by one second, so any time can be set fairly easily. Press **Return** to return to the Control Panel. 
+Tapping on the up and down arrows will set the times. The up-arrow on the right moves the time forward by ten seconds. The down-arrow moves backwards by one second, so any time can be set fairly easily. The left-hand buttons adjust by a complete hour. Press **Return** to return to the Control Panel. 
 Touching the charge percentage will open a similar ‘nudge’ panel to allow you to change the percentage overnight precharge.
 
 When making any changes, the **Return** button will turn Red and say **Wait** whilst the instructions are sent to the inverter. This may take up to 30 seconds. 
