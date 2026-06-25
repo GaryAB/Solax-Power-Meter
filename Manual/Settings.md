@@ -51,7 +51,7 @@ If you want to use the Solcast module, change the word 'OFF' to 'ON' and read th
 
 Power Meter 6.7 and 7.7 onwards now also have the ability to create a log of energy used. Enter "YES" in the line 'log ='
 
->log = "YES"                       #set to "YES" to log data to a CSV file
+>log = "YES"                       #set to "YES" to log data to a text file
 
 **The next settings apply only to Meter7.8.py**
 
