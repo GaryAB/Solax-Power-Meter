@@ -59,7 +59,7 @@ Meter7.8 can be used in two ways. You can either log into the inverter's WiFi ac
 The SSID of the inverter starts with WiFi_S followed by nine digits.
 In this case, you should set the IP number in the script to '5.8.8.8'. If you have the newer Wifi module on the inverter with 10-second updates, the IP number needs to be 192.168.10.10. 
 
-**Note** I have recently been told that later versions of the software on SolaX inverters no longer allow access to the API via your house WiFi. In this case, you **must** operate Meter 7.8 connected to the inverter's AP. This will mean that you will lose the ability to use the Solcast and Octopus modules, as you will not have access to the internet. 
+**Note** I have recently been told that later versions of the software on SolaX inverters no longer allow access to the API via your house WiFi. In this case, you **must** operate Meter 7.8 connected to the inverter's AP. Read **Instructions for using Meter7.8_py with the new SolaX Pocket Dongle v4.0** for an explanation on how to do this. 
 
 To connect via your house WiFi, you need to know whether your inverter has been set with a static IP number or whether it is allocated by your router.
 If you know that the IP address is static, then enter that address into the Inverter Address line in the script.
