@@ -52,8 +52,6 @@ def set(inverterAddress,inverterPassword,register,value):
         return int(setting) 
       else:
         return "Unable to set preload to "+sval+"%"
-        print ("Try succesful - no change")
   except:
-    print ("Try failed")
     return "Unable to set preload to "+sval+"%"
     

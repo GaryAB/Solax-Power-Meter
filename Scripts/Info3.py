@@ -429,7 +429,7 @@ def info(inverterAddress,solcast,preloadSet,dischargeDelay,setPreload,octopus,fr
                         unsetWait(infoWin)
 
 
-    # Disharge time pressed
+    # Discharge time pressed
                 if (m.x > 150) and (m.x < 310) and (m.y > 288) and (m.y < 312):
                     if dischargeAuto.upper() == 'ON':
                         stime,shrs,smins = byteTime(dischargeStart)
@@ -582,6 +582,8 @@ def getTimes():
         dischargeStart = data["dischargeStart"]
         dischargeEnd = data["dischargeEnd"]
         return chargeStart,chargeEnd,dischargeStart,dischargeEnd
+    else:
+        return Settings.startCheapRate + (Settings.crMins * 256), Settings.endCheapRate + (Settings.prMins * 256), Settings.noDelay * 60, 15127
 
 def byteTime(byte):
     mins = int(int(byte)/256)
@@ -607,6 +609,7 @@ def writePercent(infoWin,x,y,percent):
     rect.setFill("Light Gray")
     rect.setOutline('Light Gray')
     rect.draw(infoWin)
+    time.sleep(0.04)
     text = Text(Point(x,y),percent)
     text._reconfig("font",("Arial",14,"bold"))
     text.draw(infoWin)
