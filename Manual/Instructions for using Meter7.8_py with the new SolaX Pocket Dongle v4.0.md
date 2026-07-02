@@ -1,4 +1,4 @@
-### Instructions for using Meter7.8/py with the new SolaX Pocket Dongle v4.0
+### Instructions for using Meter7.8.py with the new SolaX Pocket Dongle v4.0
 
 With the new version of the pocket WiFi dongle, Solax have made some changes which have defeated the use of Power Meter via your house WiFi.
 
