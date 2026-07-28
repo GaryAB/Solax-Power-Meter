@@ -17,7 +17,7 @@ In the settings file for Meter 7.8, set the inverter address to 192.168.10.10
 
 Next, on your Raspberry Pi, open the terminal and type
 
->sudo nano /ext/wpa_supplicant/wpa_supplicant.conf
+>sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
 This should open a page looking like this:
 
