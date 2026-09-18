@@ -2,7 +2,7 @@
 
 At the top left of the meter display, there is a cog wheel symbol. Pressing and holding the screen at that point will bring up the control panel.
 
-![](/Pictures/Control Panel.jpg)
+![](/Pictures/Control.jpg)
 
 The control panel consists of one row of switches at the top and two rows of buttons. The row of switches at the top control features of the application, and the two lower rows control the inverter directly.
 
