@@ -18,7 +18,7 @@ Assuming that your inverter has been linked to the Cloud by your installer, firs
 Go to the Inverter page and copy the Registration number, which starts with the letter S. This is also your password, so paste it into the password line in the script. 
 >inverterPassword = 'SXXXXXXXXX'  #Password to access inverter - get from Solax Cloud website
 
-![](/Pictures/SolaxAPIpng)
+![](/Pictures/SolaxAPI.png)
 
 Next, go to the API page (under Service) where you can create and copy your Token ID. Paste this into the tokenID line in the script. 
 Remember to keep both the token and the password within the quotation marks.
