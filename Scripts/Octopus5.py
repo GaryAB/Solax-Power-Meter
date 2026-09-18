@@ -1,10 +1,17 @@
-def check():
+import requests
+import json
+import datetime
+import Settings
+import time
 
-  import requests
-  import json
-  import datetime
-  import Settings
-  import time
+# logging function
+def errLog(exception):
+
+    f = open("errlog.txt", "a")
+    f.write(str(datetime.datetime.now()) + "," + str(exception) + "\r")
+    f.close()
+    
+def check():
 
   global data
   global date
@@ -17,7 +24,6 @@ def check():
   id = 0
 
   try:
-
     localTime = datetime.datetime.now()
     date = (str(localTime)[0:10])
     url = 'https://api.neso.energy/api/3/action/datastore_search?resource_id=3ebf77d7-05df-466e-a023-dc45a90efeea'
@@ -41,6 +47,7 @@ def check():
         record = z[id]
         supplier = record["Registered DFS Participant"]
         sessDate = record["Delivery Date"]
+        direction = record["Event Type"]
         if (supplier != "OCTOPUS ENERGY LIMITED"):
           id = id + 1
           continue
@@ -52,7 +59,7 @@ def check():
           id = id + 1
           continue
         level = (record["Zone"])
-        if level == 0:
+        if level != region:
           id = id + 1
           continue
         
@@ -75,11 +82,13 @@ def check():
       q = p["next"]
       url = "https://api.neso.energy" + q
 
-    if startTime != "":
-      return ("Saving session today " + startTime + " to " + endTime,startData,startHour,startMins,endHour,endMins)  
+    if (startTime != "") and (direction == "Downwards"):
+      return ("Saving session today " + startTime + " to " + endTime,startData,startHour,startMins,endHour,endMins,direction)  
+    elif (startTime != "") and (direction == "Upwards"):
+      return ("Free session today " + startTime + " to " + endTime,startData,startHour,startMins,endHour,endMins,direction)  
     else:
-      return ("",0,0,0,0,0)
+      return ("",0,0,0,0,0,None)
 
   except Exception as e:
-    errlog(e + " in Octopus5.py")
-    return ("",0,0,0,0,0)
+    errLog(e + " in Octopus5.py")
+    return ("",0,0,0,0,0,None)

@@ -1,4 +1,4 @@
-###Instructions for use of the Solcast module
+### Instructions for use of the Solcast module
 
 The Solcast module **Solcast4.py** downloads the next day's estimated solar yield from [toolkit.solcast.com.au](toolkit.solcast.com.au) and uses it to calculate how much energy to add to the home batteries on an overnight off-peak rate to make the best use of the batteries and solar panels.
 
