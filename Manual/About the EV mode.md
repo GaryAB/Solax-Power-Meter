@@ -13,7 +13,9 @@ In settings you can set a power threshold and a delay before the car charging is
 The correct setting will differ with your charging set up, but with a 7 kW charger, a good setting might be:
 
 >EVmode = "YES"
+>
 >carThreshold = 7000
+>
 >carDelay = 10
 
 where the script turns off the battery discharge if there is a sustained load of over 7 kW for longer than ten minutes. 
@@ -22,7 +24,9 @@ The delay should mean that you only lose slightly more than 1 kWh from your hous
 Alternatively, if you are using a plug-in 'granny' charger you might set:
 
 >EVmode = "YES"
+>
 >carThreshold = 2000
+>
 >carDelay = 20
 
 where a sustained load of over 2 kW for more than 20 minutes will switch off the battery discharge.
