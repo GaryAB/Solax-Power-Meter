@@ -20,7 +20,7 @@ It has a 'Boost' mode which allows a timed discharge of the house battery when i
 
 Meter7.9.py also has the ability to automatically set the overnight preload of the battery amd adjust the use of the battery the next day to avoid the battery becomeing completely discharged before the evening peak. It also has an EV mode to prevent car charging completely exhausting the house batteries.
 
-![](/Pictures/Set_to.jpg)
+![](/Pictures/Set_to.png)
 
 Both scripts can be enabled as embedded systems on a Raspberry Pi, starting automatically on boot up. 
 
