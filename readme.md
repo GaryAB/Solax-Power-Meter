@@ -16,9 +16,9 @@ Meter 7.9 has several new features. As well as displaying exported energy, it ha
 
 ![](/Pictures/Control.png)
 
-It has a 'Boost' mode which allows a timed discharge of the house battery when it otherwise would not be used, and it can detact and adjust the inverter for Octopus savings sessions.
+It has a 'Boost' mode which allows a timed discharge of the house battery when it otherwise would not be used, and it can detect and adjust the inverter for Octopus savings sessions.
 
-Meter7.9.py also has the ability to automatically set the overnight preload of the battery amd adjust the use of the battery the next day to avoid the battery becomeing completely discharged before the evening peak. It also has an EV mode to prevent car charging completely exhausting the house batteries.
+Meter7.9.py also has the ability to automatically set the overnight preload of the battery and adjust the use of the battery the next day to avoid the battery becoming completely discharged before the evening peak. It also has an EV mode to prevent car charging completely exhausting the house batteries.
 
 ![](/Pictures/Set_to.png)
 
