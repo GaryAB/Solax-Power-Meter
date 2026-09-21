@@ -718,6 +718,7 @@ try:
                 else:
                     print("Timing loop has stopped")
                 hypCount = 0
+            hypWait = 0
             m = win.checkMouse()
             if m != None:
                 if (m.x > 0) and (m.x < 70) and (m.y > 0) and (m.y < 70):
