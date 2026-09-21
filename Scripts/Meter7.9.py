@@ -46,7 +46,7 @@ def disphy(hyphen):
     else:
         text = Text(Point(400, 442), " : ")
         text._reconfig("font", ("Arial", 18, "bold"))
-        text.setFill("Light gray")
+        text.setFill("Light Gray")
         text.draw(win, 0)
 
 def dispclk(hrs, mins, ohrs, omins):
@@ -684,15 +684,13 @@ try:
             if feedpower > 0:
                 first = 5
                 frames = 10
-                last = first + frames
             elif gridPower > 0:
                 first = 15
                 frames = 10
-                last = first + frames
             else:
                 first = 5
                 frames = 0
-                last = first + frames
+            last = first + frames
 
             if frames > 0:
                 myImage.animate(win, num)
@@ -720,7 +718,6 @@ try:
                 else:
                     print("Timing loop has stopped")
                 hypCount = 0
-            hypWait = 0
             m = win.checkMouse()
             if m != None:
                 if (m.x > 0) and (m.x < 70) and (m.y > 0) and (m.y < 70):
@@ -1630,7 +1627,7 @@ try:
 
         # Logic to prevent car charging using power from the batteries
         # if power exceeds a threshold for more than a set time, block battery discharge
-        if (Settings.EVmode.upper() == "YES") and (boost < 3) and (ssActive == 0) and (invMode == "0"):
+        if (Settings.EVmode.upper() == "YES") and (boost < 3) and (ssActive == 0) and (invMode == "0") and (freeSet < 2):
             carThreshold = Settings.carThreshold
             carDelay = Settings.carDelay
             consume = int(y[38])
