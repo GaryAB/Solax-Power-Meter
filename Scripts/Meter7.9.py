@@ -670,9 +670,7 @@ try:
     dischargeStart = array[38]
     dischargeEnd = array[39]
 
-    if chargeStart != 0:
-        Info4.saveTimes(chargeStart,chargeEnd,dischargeStart,dischargeEnd)
-
+    Info4.saveTimes(chargeStart,chargeEnd,dischargeStart,dischargeEnd)
 
     # Test for Mouse clicks whilst waiting for thread to update data from inverter
     while True:

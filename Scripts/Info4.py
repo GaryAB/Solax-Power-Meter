@@ -588,11 +588,12 @@ def untouch(infoWin,x,y):
     return 'OFF'
 
 def saveTimes(chargeStart,chargeEnd,dischargeStart,dischargeEnd):
-    data = {"chargeStart": chargeStart,"chargeEnd": chargeEnd,"dischargeStart": dischargeStart,"dischargeEnd": dischargeEnd}
-    dataJson = json.dumps(data)
-    f = open("times.json", "w")
-    f.write(dataJson)
-    f.close()
+    if chargeStart != 0:
+        data = {"chargeStart": chargeStart,"chargeEnd": chargeEnd,"dischargeStart": dischargeStart,"dischargeEnd": dischargeEnd}
+        dataJson = json.dumps(data)
+        f = open("times.json", "w")
+        f.write(dataJson)
+        f.close()
 
 def getTimes():
     if os.path.exists("times.json"):
